@@ -4,6 +4,10 @@
 
 这是一个针对CCKS2025竞赛的项目，专注于检测大模型生成的文本。项目使用Qwen2.5-7B-Instruct模型的QLORA（Quantized Low-Rank Adaptation）微调版本进行训练和推理。主要组件包括数据处理、模型训练、测试推理，以及数据分析和可视化。
 
+**CCKS2025-大模型生成文本检测**竞赛比赛成绩：**B 榜第28名**
+
+![alt text](img/CCKS2025.png)
+
 ### 项目结构
 - **data/**: 包含训练集（train.jsonl）、测试集（test.jsonl）、原始数据（*.pkl）和分析图表（analysis/目录下）。
 - **model/**: 存储微调后的模型文件，如Qwen2.5-7B-Instruct-QLoRA。
@@ -53,6 +57,7 @@ python data_processor.py
 ```
 python train.py
 ```
+- 模型为Qwen2.5-7B-Instruct。
 - 支持数据增强（如同义词替换）。
 - 使用LoRA配置微调Qwen模型。
 - 保存模型到model/目录。
@@ -77,7 +82,7 @@ python run_test.py
 - **推理流程**：提示工程用于文本分类。
 
 ### 优势
-- 高效的QLORA微调减少资源消耗。
+- 高效的LORA微调减少资源消耗。
 - 数据增强提升模型鲁棒性。
 
 ### 限制
