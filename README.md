@@ -1,4 +1,4 @@
-# CCKS2025 大模型生成文本检测 - Qwen7B-QLORA
+# CCKS2025 大模型生成文本检测 - Qwen7B-LORA
 
 ## 项目概述
 
